@@ -1,38 +1,15 @@
-## This is assignment 2.
+## Put comments here that give an overall description of what your
+## functions do
 
-## This creates a matrix to hold its inverse
+## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-  
-  inv = NULL
-  set = function(z){
-    
-    x <<- z
-    inv <<- NULL
-  }
-  
-  get = function() x
-  setinv = function (inverse) inv <<- inverse
-  getinv = function () inv
-  list(set=set, get=get, setinv=setinv, getinv=getinv)
-  
-  
 
 }
 
 
-## This calculates the inverse of the matrix in makeCacheMatrix
+## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-  
-  inv = x$getinv()
-  
-  mat.data = x$get()
-  inv = solve(mat.data,...)
-  
-  x$setinv(inv)
-  return(inv)
-  
-  
 }
